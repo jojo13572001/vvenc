@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7E9F0E1A-8741-3B90-8E38-045A4F9C08FF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>vvenc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\git\vvenc\lib\debug-static\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vvenc.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vvenc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\git\vvenc\lib\release-static\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vvenc.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vvenc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\git\vvenc\lib\minsizerel-static\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vvenc.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vvenc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\git\vvenc\lib\relwithdebinfo-static\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vvenc.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vvenc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\include;C:\Users\Administrator\git\vvenc\build;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\SYSTEM;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\.;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\DecoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\EncoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib\x86;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\thirdparty\nlohmann_json\single_include;C:\Users\Administrator\git\vvenc\source\Lib\apputils\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4245;4251;4310;4389;4456;4457;4458;4459;4505;4701;4702;4703;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;TARGET_SIMD_X86;VVENC_ENABLE_THIRDPARTY_JSON;VVENC_SOURCE;_WIN32_WINNT=0x0600;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;TARGET_SIMD_X86;VVENC_ENABLE_THIRDPARTY_JSON;VVENC_SOURCE;_WIN32_WINNT=0x0600;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\include;C:\Users\Administrator\git\vvenc\build;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\SYSTEM;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\.;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\DecoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\EncoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib\x86;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\thirdparty\nlohmann_json\single_include;C:\Users\Administrator\git\vvenc\source\Lib\apputils\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\include;C:\Users\Administrator\git\vvenc\build;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\SYSTEM;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\.;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\DecoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\EncoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib\x86;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\thirdparty\nlohmann_json\single_include;C:\Users\Administrator\git\vvenc\source\Lib\apputils\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\include;C:\Users\Administrator\git\vvenc\build;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\SYSTEM;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\.;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\DecoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\EncoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib\x86;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\thirdparty\nlohmann_json\single_include;C:\Users\Administrator\git\vvenc\source\Lib\apputils\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4100;4127;4244;4245;4251;4310;4389;4456;4457;4458;4459;4505;4701;4702;4703;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;TARGET_SIMD_X86;VVENC_ENABLE_THIRDPARTY_JSON;NDEBUG;VVENC_SOURCE;_WIN32_WINNT=0x0600;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;TARGET_SIMD_X86;VVENC_ENABLE_THIRDPARTY_JSON;NDEBUG;VVENC_SOURCE;_WIN32_WINNT=0x0600;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\include;C:\Users\Administrator\git\vvenc\build;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\SYSTEM;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\.;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\DecoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\EncoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib\x86;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\thirdparty\nlohmann_json\single_include;C:\Users\Administrator\git\vvenc\source\Lib\apputils\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\include;C:\Users\Administrator\git\vvenc\build;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\SYSTEM;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\.;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\DecoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\EncoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib\x86;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\thirdparty\nlohmann_json\single_include;C:\Users\Administrator\git\vvenc\source\Lib\apputils\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\include;C:\Users\Administrator\git\vvenc\build;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\SYSTEM;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\.;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\DecoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\EncoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib\x86;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\thirdparty\nlohmann_json\single_include;C:\Users\Administrator\git\vvenc\source\Lib\apputils\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4100;4127;4244;4245;4251;4310;4389;4456;4457;4458;4459;4505;4701;4702;4703;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;TARGET_SIMD_X86;VVENC_ENABLE_THIRDPARTY_JSON;NDEBUG;VVENC_SOURCE;_WIN32_WINNT=0x0600;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;TARGET_SIMD_X86;VVENC_ENABLE_THIRDPARTY_JSON;NDEBUG;VVENC_SOURCE;_WIN32_WINNT=0x0600;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\include;C:\Users\Administrator\git\vvenc\build;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\SYSTEM;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\.;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\DecoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\EncoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib\x86;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\thirdparty\nlohmann_json\single_include;C:\Users\Administrator\git\vvenc\source\Lib\apputils\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\include;C:\Users\Administrator\git\vvenc\build;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\SYSTEM;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\.;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\DecoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\EncoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib\x86;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\thirdparty\nlohmann_json\single_include;C:\Users\Administrator\git\vvenc\source\Lib\apputils\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\include;C:\Users\Administrator\git\vvenc\build;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\SYSTEM;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\.;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\DecoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\EncoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib\x86;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\thirdparty\nlohmann_json\single_include;C:\Users\Administrator\git\vvenc\source\Lib\apputils\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4245;4251;4310;4389;4456;4457;4458;4459;4505;4701;4702;4703;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;TARGET_SIMD_X86;VVENC_ENABLE_THIRDPARTY_JSON;NDEBUG;VVENC_SOURCE;_WIN32_WINNT=0x0600;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;TARGET_SIMD_X86;VVENC_ENABLE_THIRDPARTY_JSON;NDEBUG;VVENC_SOURCE;_WIN32_WINNT=0x0600;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\include;C:\Users\Administrator\git\vvenc\build;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\SYSTEM;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\.;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\DecoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\EncoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib\x86;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\thirdparty\nlohmann_json\single_include;C:\Users\Administrator\git\vvenc\source\Lib\apputils\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\include;C:\Users\Administrator\git\vvenc\build;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\SYSTEM;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\.;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\DecoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\EncoderLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\CommonLib\x86;C:\Users\Administrator\git\vvenc\source\Lib\vvenc\..\..\..\thirdparty\nlohmann_json\single_include;C:\Users\Administrator\git\vvenc\source\Lib\apputils\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Administrator\git\vvenc\source\Lib\vvenc\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Administrator/git/vvenc/source/Lib/vvenc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Administrator/git/vvenc -BC:/Users/Administrator/git/vvenc/build --check-stamp-file C:/Users/Administrator/git/vvenc/build/source/Lib/vvenc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\git\vvenc\source\Lib\vvenc\version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\git\vvenc\build\source\Lib\vvenc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Administrator/git/vvenc/source/Lib/vvenc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Administrator/git/vvenc -BC:/Users/Administrator/git/vvenc/build --check-stamp-file C:/Users/Administrator/git/vvenc/build/source/Lib/vvenc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\git\vvenc\source\Lib\vvenc\version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\git\vvenc\build\source\Lib\vvenc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Administrator/git/vvenc/source/Lib/vvenc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Administrator/git/vvenc -BC:/Users/Administrator/git/vvenc/build --check-stamp-file C:/Users/Administrator/git/vvenc/build/source/Lib/vvenc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\git\vvenc\source\Lib\vvenc\version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\git\vvenc\build\source\Lib\vvenc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Administrator/git/vvenc/source/Lib/vvenc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Administrator/git/vvenc -BC:/Users/Administrator/git/vvenc/build --check-stamp-file C:/Users/Administrator/git/vvenc/build/source/Lib/vvenc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\git\vvenc\source\Lib\vvenc\version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\git\vvenc\build\source\Lib\vvenc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\AdaptiveLoopFilter.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\AffineGradientSearch.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\BitStream.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Buffer.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\CodingStructure.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\ContextModelling.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Contexts.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\DepQuant.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\InterPrediction.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\InterpolationFilter.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\IntraPrediction.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\LoopFilter.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\MCTF.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\MatrixIntraPrediction.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Mv.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\PicYuvMD5.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Picture.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\ProfileLevelTier.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Quant.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\QuantRDOQ.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\QuantRDOQ2.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\RdCost.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Reshape.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Rom.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\RomTr.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\SEI.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\SampleAdaptiveOffset.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\SearchSpaceCounter.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Slice.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\StatCounter.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\TimeProfiler.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\TrQuant.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\TrQuant_EMT.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Unit.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\UnitPartitioner.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\UnitTools.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\dtrace.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\AnnexBread.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\BinDecoder.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\CABACReader.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\DecCu.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\DecLib.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\DecSlice.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\NALread.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\SEIread.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\VLCReader.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\BinEncoder.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\BitAllocation.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\CABACWriter.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncAdaptiveLoopFilter.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncCfg.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncCu.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncGOP.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncHRD.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncLib.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncModeCtrl.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncPicture.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncReshape.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncSampleAdaptiveOffset.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncSlice.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\InterSearch.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\IntraSearch.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\NALwrite.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\RateCtrl.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\SEIEncoder.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\SEIwrite.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\VLCWriter.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\Utilities\NoMallocThreadPool.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\vvenc\vvenc.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\vvenc\vvencCfg.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\vvenc\vvencimpl.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\CommonDefX86.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\InitX86.cpp" />
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse41\AdaptiveLoopFilter_sse41.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse41\AffineGradientSearch_sse41.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse41\Buffer_sse41.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse41\InterPred_sse41.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse41\InterpolationFilter_sse41.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse41\IntraPred_sse41.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse41\LoopFilter_sse41.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse41\MCTF_avx41.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse41\Quant_sse41.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse41\RdCost_sse41.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse41\SampleAdaptiveOffset_sse41.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse41\Trafo_sse41.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE41;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse42\Buffer_sse42.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse42\InterPred_sse42.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse42\InterpolationFilter_sse42.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse42\IntraPred_sse42.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse42\LoopFilter_sse42.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse42\MCTF_avx42.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse42\Quant_sse42.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse42\RdCost_sse42.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse42\SampleAdaptiveOffset_sse42.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\sse42\Trafo_sse42.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_SSE42;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx\AdaptiveLoopFilter_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx\AffineGradientSearch_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx\Buffer_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx\InterPred_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx\InterpolationFilter_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx\IntraPred_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx\LoopFilter_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx\MCTF_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx\Quant_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx\RdCost_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx\SampleAdaptiveOffset_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx\Trafo_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx2\AdaptiveLoopFilter_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx2\AffineGradientSearch_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx2\Buffer_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx2\InterPred_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx2\InterpolationFilter_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx2\IntraPred_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx2\LoopFilter_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx2\MCTF_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx2\Quant_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx2\RdCost_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx2\SampleAdaptiveOffset_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\avx2\Trafo_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">USE_AVX2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\AdaptiveLoopFilter.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\AffineGradientSearch.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\AlfParameters.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\BitStream.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Buffer.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\CodingStructure.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Common.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\CommonDef.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\ContextModelling.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Contexts.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\DepQuant.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\HRD.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\InterPrediction.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\InterpolationFilter.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\IntraPrediction.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\LoopFilter.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\MCTF.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\MD5.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\MatrixIntraPrediction.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\MipData.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\MotionInfo.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Mv.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Nal.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\PicYuvMD5.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Picture.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\ProfileLevelTier.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Quant.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\QuantRDOQ.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\QuantRDOQ2.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\RdCost.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Reshape.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Rom.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\SEI.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\SampleAdaptiveOffset.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\SearchSpaceCounter.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Slice.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\StatCounter.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\TimeProfiler.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\TrQuant.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\TrQuant_EMT.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\TypeDef.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\Unit.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\UnitPartitioner.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\UnitTools.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\dtrace.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\dtrace_buffer.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\dtrace_codingstruct.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\dtrace_next.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\AdaptiveLoopFilterX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\AffineGradientSearchX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\BufferX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\CommonDefX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\InterPredX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\InterpolationFilterX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\IntraPredX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\LoopFilterX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\MCTFX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\QuantX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\RdCostX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\SampleAdaptiveOffsetX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\CommonLib\x86\TrafoX86.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\AnnexBread.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\BinDecoder.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\CABACReader.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\DecCu.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\DecLib.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\DecSlice.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\NALread.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\SEIread.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\DecoderLib\VLCReader.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\Analyze.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\BinEncoder.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\BitAllocation.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\CABACWriter.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncAdaptiveLoopFilter.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncCfg.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncCu.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncGOP.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncHRD.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncLib.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncModeCtrl.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncPicture.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncReshape.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncSampleAdaptiveOffset.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncSlice.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\EncStage.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\InterSearch.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\IntraSearch.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\NALwrite.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\RateCtrl.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\SEIEncoder.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\SEIwrite.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\EncoderLib\VLCWriter.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\Utilities\MsgLog.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\Utilities\NoMallocThreadPool.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\vvenc\resource.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\vvenc\resource_version.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\source\Lib\vvenc\vvencimpl.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\include\vvenc\vvenc.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\include\vvenc\vvencCfg.h" />
+    <ClInclude Include="C:\Users\Administrator\git\vvenc\include\vvenc\vvencDecl.h" />
+    <Natvis Include="C:\Users\Administrator\git\vvenc\source\VisualStudio\common.natvis">
+    </Natvis>
+    <Natvis Include="C:\Users\Administrator\git\vvenc\source\VisualStudio\static_vector.natvis">
+    </Natvis>
+    <ResourceCompile Include="C:\Users\Administrator\git\vvenc\source\Lib\vvenc\vvenc.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Administrator\git\vvenc\build\ZERO_CHECK.vcxproj">
+      <Project>{F5EDF3D0-D290-3A42-9C25-94315F66EDA2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Administrator\git\vvenc\build\source\Lib\apputils\apputils.vcxproj">
+      <Project>{6074231E-0F0A-395D-A0E6-04C1B43243AD}</Project>
+      <Name>apputils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

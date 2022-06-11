@@ -1,0 +1,16 @@
+﻿  Building Custom Rule C:/Users/Administrator/git/vvenc/source/Lib/vvenc/CMakeLists.txt
+  AdaptiveLoopFilter.cpp
+  AffineGradientSearch.cpp
+  BitStream.cpp
+  Buffer.cpp
+  CodingStructure.cpp
+  ContextModelling.cpp
+  Contexts.cpp
+  DepQuant.cpp
+  InterPrediction.cpp
+  InterpolationFilter.cpp
+  IntraPrediction.cpp
+  LoopFilter.cpp
+  MCTF.cpp
+  MatrixIntraPrediction.cpp
+  Compiler terminating.  Please wait........... Abort complete.

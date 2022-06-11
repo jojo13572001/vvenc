@@ -1,0 +1,10 @@
+prefix=C:/Users/Administrator/git/vvenc/install
+exec_prefix=bin
+libdir=C:/Users/Administrator/git/vvenc/install/lib
+includedir=C:/Users/Administrator/git/vvenc/install/include
+
+Name: libvvenc
+Description: Fraunhofer Versatile Video Encoder (VVenC)
+Version: 1.4.0
+Libs: -L${libdir} -lvvenc -lstdc++ -lm
+Cflags: -I${includedir}

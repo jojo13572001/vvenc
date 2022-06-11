@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/Users/Administrator/git/vvenc/source/Lib/apputils/CMakeLists.txt
+  ParseArg.cpp
+  VVEncAppCfg.cpp
+  YuvFileIO.cpp
+  apputils.vcxproj -> C:\Users\Administrator\git\vvenc\lib\debug-static\apputils.lib
